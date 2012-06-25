@@ -72,7 +72,7 @@ import guitypes.checkers.quals.*;
 
 	private Action scheduleAction;
 
-	private Action refreshAction;
+	private RefreshAction refreshAction;
 
 	private Action openBrowserAction;
 
@@ -373,7 +373,7 @@ import guitypes.checkers.quals.*;
 			}
 		});
 
-		refreshAction = new Action() {
+		refreshAction = new RefreshAction() {
 			public void run() {
 				org.eclipse.core.runtime.jobs.Job refresh = new org.eclipse.core.runtime.jobs.Job("Refreshing Hudson status") {
 					protected IStatus run(IProgressMonitor monitor) {
@@ -399,6 +399,10 @@ import guitypes.checkers.quals.*;
 		refreshAction.setToolTipText("Refresh status for all projects");
 		refreshAction.setImageDescriptor(Activator.getImageDescriptor("icons/refresh.png"));
 	}
+
+        private static abstract class RefreshAction extends Action {
+            @SafeEffect public abstract void run(); // Colin Gordon - this is to work around the ad-hoc-safe subclassing of Action
+        }
 
 	private void showSecurityTokenDialog(Job j) {
 		Preferences prefs = Activator.getDefault().getPluginPreferences();
