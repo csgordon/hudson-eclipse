@@ -67,8 +67,7 @@ import dk.contix.eclipse.hudson.views.actions.StatusFilter;
 
 import guitypes.checkers.quals.*;
 
-@UIType
-public class HudsonView extends ViewPart implements PropertyChangeListener {
+@UIType @UI public class HudsonView extends ViewPart implements @UI PropertyChangeListener {
 	private TableViewer viewer;
 
 	private Action scheduleAction;
@@ -87,7 +86,7 @@ public class HudsonView extends ViewPart implements PropertyChangeListener {
 
 	private Text nameText;
 
-	private PropertyChangeSupport nameChanges = new PropertyChangeSupport(this);
+	private @UI PropertyChangeSupport nameChanges = new @UI PropertyChangeSupport(this);
 
 	private JobContentProvider jobContentProvider;
 
