@@ -1,0 +1,53 @@
+javac -J-Xbootclasspath/p:/homes/gws/csgordon/research/guitypes/checker/binary/jsr308-all.jar -Xmaxerrs 999 -cp /homes/gws/csgordon/research/guitypes/checker/dist/lib/guitypes-20120807.jar:/homes/gws/csgordon/research/experiments/hudson-eclipse/lib/commons-logging-1.0.4.jar:/homes/gws/csgordon/research/experiments/hudson-eclipse/lib/commons-httpclient-3.1.jar:/homes/gws/csgordon/research/experiments/hudson-eclipse/lib/apache-log4j.jar:/homes/gws/csgordon/research/experiments/hudson-eclipse/lib/commons-codec-1.3.jar:/usr/lib/eclipse/plugins/org.eclipse.swt.gtk.linux.x86_64_3.7.0.dist.jar:/usr/lib/eclipse/plugins/org.eclipse.ui_3.7.0.dist.jar:/usr/lib/eclipse/plugins/org.eclipse.swt_3.7.0.dist.jar:/usr/lib/eclipse/plugins/org.eclipse.jface_3.7.0.dist.jar:/usr/lib/eclipse/plugins/org.eclipse.core.commands_3.6.0.dist.jar:/usr/lib/eclipse/plugins/org.eclipse.ui.workbench_3.7.0.dist.jar:/usr/lib/eclipse/plugins/org.eclipse.core.runtime_3.7.0.dist.jar:/usr/lib/eclipse/plugins/org.eclipse.osgi_3.7.0.dist.jar:/usr/lib/eclipse/plugins/org.eclipse.equinox.common_3.6.0.dist.jar:/usr/lib/eclipse/plugins/org.eclipse.core.jobs_3.5.100.dist.jar:/usr/lib/ecliplse/plugins/org.eclipse.core.runtime.compatibility.registry_3.5.0.dist/runtime_registry_compatibility.jar:/usr/lib/eclipse/plugins/org.eclipse.equinox.registry_3.5.100.dist.jar:/usr/lib/eclipse/plugins/org.eclipse.equinox.preferences_3.4.0.dist.jar:/usr/lib/eclipse/plugins/org.eclipse.core.contenttype_3.4.100.dist.jar:/usr/lib/eclipse/plugins/org.eclipse.equinox.app_1.3.100.dist.jar:/usr/lib/eclipse/plugins/org.eclipse.ui.forms_3.5.100.dist.jar:/usr/lib/eclipse/plugins/org.eclipse.ui.workbench.texteditor_3.7.0.dist.jar:/usr/lib/eclipse/plugins/org.eclipse.core.net_1.2.100.dist.jar -processor guitypes.checkers.GUIEffectsChecker
+./dk/contix/eclipse/hudson/JobContentProvider.java:107: error: Calling a method with UIEffect effect from a context limited to SafeEffect effects.
+						/* BUG -- Colin Gordon */ MessageDialog.openWarning(viewer.getControl().getShell(), "Hudson build failed", "Hudson build failed for " + job.getName());
+						                                                   ^
+./dk/contix/eclipse/hudson/JobContentProvider.java:107: error: Calling a method with UIEffect effect from a context limited to SafeEffect effects.
+						/* BUG -- Colin Gordon */ MessageDialog.openWarning(viewer.getControl().getShell(), "Hudson build failed", "Hudson build failed for " + job.getName());
+						                                                                                ^
+./dk/contix/eclipse/hudson/JobContentProvider.java:107: error: Calling a method with UIEffect effect from a context limited to SafeEffect effects.
+						/* BUG -- Colin Gordon */ MessageDialog.openWarning(viewer.getControl().getShell(), "Hudson build failed", "Hudson build failed for " + job.getName());
+						                                                                     ^
+./dk/contix/eclipse/hudson/JobContentProvider.java:139: error: Calling a method with UIEffect effect from a context limited to SafeEffect effects.
+			/* BUG -- Colin Gordon */ action.setUnknown();
+			                                           ^
+./dk/contix/eclipse/hudson/JobContentProvider.java:140: error: Calling a method with UIEffect effect from a context limited to SafeEffect effects.
+			/* BUG -- Colin Gordon */ ErrorDialog.openError(viewer.getControl().getShell(), "Unable to get Hudson status",
+			                                               ^
+./dk/contix/eclipse/hudson/JobContentProvider.java:140: error: Calling a method with UIEffect effect from a context limited to SafeEffect effects.
+			/* BUG -- Colin Gordon */ ErrorDialog.openError(viewer.getControl().getShell(), "Unable to get Hudson status",
+			                                                                            ^
+./dk/contix/eclipse/hudson/JobContentProvider.java:140: error: Calling a method with UIEffect effect from a context limited to SafeEffect effects.
+			/* BUG -- Colin Gordon */ ErrorDialog.openError(viewer.getControl().getShell(), "Unable to get Hudson status",
+			                                                                 ^
+./dk/contix/eclipse/hudson/JobContentProvider.java:150: error: Calling a method with UIEffect effect from a context limited to SafeEffect effects.
+			/* BUG -- Colin Gordon */ action.setUnknown();
+			                                           ^
+./dk/contix/eclipse/hudson/JobContentProvider.java:152: error: Calling a method with UIEffect effect from a context limited to SafeEffect effects.
+				/* BUG -- Colin Gordon */ ErrorDialog.openError(viewer.getControl().getShell(), "Unable to get Hudson status",
+				                                               ^
+./dk/contix/eclipse/hudson/JobContentProvider.java:152: error: Calling a method with UIEffect effect from a context limited to SafeEffect effects.
+				/* BUG -- Colin Gordon */ ErrorDialog.openError(viewer.getControl().getShell(), "Unable to get Hudson status",
+				                                                                            ^
+./dk/contix/eclipse/hudson/JobContentProvider.java:152: error: Calling a method with UIEffect effect from a context limited to SafeEffect effects.
+				/* BUG -- Colin Gordon */ ErrorDialog.openError(viewer.getControl().getShell(), "Unable to get Hudson status",
+				                                                                 ^
+./dk/contix/eclipse/hudson/views/HudsonView.java:89: error: incompatible types.
+	private @UI PropertyChangeSupport nameChanges = new @UI PropertyChangeSupport(this);
+	                                                                              ^
+  found   : @UI HudsonView
+  required: @PolyUI Object
+./dk/contix/eclipse/hudson/views/HudsonView.java:208: error: incompatible types.
+		nameFilterAction.addPropertyChangeListener(new @UI IPropertyChangeListener() {
+		                                           ^
+  found   : @UI IPropertyChangeListener
+  required: @AlwaysSafe IPropertyChangeListener
+./dk/contix/eclipse/hudson/views/HudsonView.java:377: warning: This method overrides a method with @UI effect (org.eclipse.jface.action.Action.run()) and another method with an @AlwaysSafe effect (dk.contix.eclipse.hudson.views.HudsonView.RefreshAction.run()).  This is discouraged.
+			public void run() {
+			            ^
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+13 errors
+1 warning
