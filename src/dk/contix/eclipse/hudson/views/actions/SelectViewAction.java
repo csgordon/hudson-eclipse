@@ -9,7 +9,7 @@ import dk.contix.eclipse.hudson.JobContentProvider;
 import dk.contix.eclipse.hudson.JobView;
 
 import guitypes.checkers.quals.*;
-public class SelectViewAction extends @UI Action {
+public class SelectViewAction extends Action {
 
 	private final IPreferenceStore store;
 	private final JobView view;
