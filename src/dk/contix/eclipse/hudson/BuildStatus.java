@@ -2,7 +2,7 @@ package dk.contix.eclipse.hudson;
 
 import org.eclipse.swt.graphics.Image;
 
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 
 public class BuildStatus {
 	

@@ -1,9 +1,5 @@
 #!/bin/bash
-export PATH=~/research/guitypes/checker/binary:$PATH
-
-CHECKER=/homes/gws/csgordon/research/guitypes/checker/dist/lib/guitypes-`date "+%Y%m%d"`.jar
-
-CFJARS="/homes/gws/csgordon/research/guitypes/checker/binary/jsr308-all.jar"
+export PATH=$CHECKERFRAMEWORK/checker/bin:$PATH
 
 JARS="/homes/gws/csgordon/research/experiments/hudson-eclipse/lib/commons-logging-1.0.4.jar:/homes/gws/csgordon/research/experiments/hudson-eclipse/lib/commons-httpclient-3.1.jar:/homes/gws/csgordon/research/experiments/hudson-eclipse/lib/apache-log4j.jar:/homes/gws/csgordon/research/experiments/hudson-eclipse/lib/commons-codec-1.3.jar"
 
@@ -14,10 +10,7 @@ ECLIPSEJARS="/usr/lib/eclipse/plugins/org.eclipse.swt.gtk.linux.x86_64_3.7.0.dis
 DEBUG= #"-AprintErrorStack -Afilenames -Ashowchecks" #-Alint=debugSpew"
 ERRS=999
 
-#COMMAND="javac -J-Xbootclasspath/p:/homes/gws/csgordon/research/guitypes/checker/binary/jsr308-all.jar -J-Xms48m -J-cp -J$CFJARS -Xmaxerrs 999 -cp $CHECKER:$CFJARS:$JARS -processor guitypes.checkers.GUIEffectsChecker $DEBUG"
-#COMMAND="javac -J-Xbootclasspath/p:/homes/gws/csgordon/research/guitypes/checker/binary/jsr308-all.jar -Xmaxerrs 999 -cp $CHECKER:$JARS -processor guitypes.checkers.GUIEffectsChecker $DEBUG"
-#COMMAND="javac -Xmaxerrs 999 -cp $CHECKER:$JARS -processor guitypes.checkers.GUIEffectsChecker $DEBUG"
-COMMAND="javac -J-Xbootclasspath/p:$CFJARS -Xmaxerrs $ERRS -cp $CHECKER:$JARS:$ECLIPSEJARS -processor guitypes.checkers.GUIEffectsChecker $DEBUG"
+COMMAND="javac -Xmaxerrs $ERRS -cp $JARS:$ECLIPSEJARS -processor org.checkerframework.checker.guieffect.GuiEffectChecker $DEBUG"
 
 echo $COMMAND
 

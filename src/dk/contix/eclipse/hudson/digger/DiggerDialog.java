@@ -25,7 +25,7 @@ import org.eclipse.swt.widgets.Shell;
 
 import dk.contix.eclipse.hudson.Activator;
 
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 
 @UIType
 public class DiggerDialog extends Dialog {

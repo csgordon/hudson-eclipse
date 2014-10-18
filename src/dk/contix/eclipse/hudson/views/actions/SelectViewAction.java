@@ -8,7 +8,7 @@ import dk.contix.eclipse.hudson.Activator;
 import dk.contix.eclipse.hudson.JobContentProvider;
 import dk.contix.eclipse.hudson.JobView;
 
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 public class SelectViewAction extends Action {
 
 	private final IPreferenceStore store;

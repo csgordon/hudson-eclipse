@@ -7,7 +7,7 @@ import org.eclipse.swt.graphics.Image;
 import org.eclipse.ui.plugin.AbstractUIPlugin;
 import org.osgi.framework.BundleContext;
 import org.osgi.util.tracker.ServiceTracker;
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 /**
  * The activator class controls the plug-in life cycle
  */

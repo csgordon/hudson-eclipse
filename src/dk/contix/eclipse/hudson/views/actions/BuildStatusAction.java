@@ -7,7 +7,7 @@ import org.eclipse.ui.texteditor.StatusLineContributionItem;
 
 import dk.contix.eclipse.hudson.Activator;
 import dk.contix.eclipse.hudson.Job;
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 
 
 @UIType

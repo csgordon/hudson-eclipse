@@ -6,7 +6,7 @@ import org.eclipse.jface.viewers.ViewerFilter;
 
 import dk.contix.eclipse.hudson.Activator;
 import dk.contix.eclipse.hudson.Job;
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 
 @UIType public class StatusFilter extends ViewerFilter {
 

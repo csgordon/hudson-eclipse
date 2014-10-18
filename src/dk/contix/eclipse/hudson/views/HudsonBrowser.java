@@ -10,7 +10,7 @@ import org.eclipse.ui.IPathEditorInput;
 import org.eclipse.ui.PartInitException;
 import org.eclipse.ui.part.EditorPart;
 
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 
 @UIType
 public class HudsonBrowser extends EditorPart {
