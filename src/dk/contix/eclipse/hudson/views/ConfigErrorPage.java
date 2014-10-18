@@ -13,7 +13,7 @@ import org.eclipse.ui.forms.widgets.TableWrapLayout;
 import org.eclipse.ui.part.Page;
 
 import dk.contix.eclipse.hudson.views.actions.OpenPreferencesAction;
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 
 @UIType public class ConfigErrorPage extends Page {
 

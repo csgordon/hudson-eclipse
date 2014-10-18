@@ -5,7 +5,7 @@ import org.eclipse.jface.viewers.LabelProvider;
 import org.eclipse.swt.graphics.Image;
 
 import dk.contix.eclipse.hudson.Job;
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 
 @UIType public class JobLabelProvider extends LabelProvider implements ITableLabelProvider {
 

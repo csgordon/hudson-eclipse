@@ -22,7 +22,7 @@ import dk.contix.eclipse.hudson.Activator;
 import dk.contix.eclipse.hudson.HudsonClient;
 import dk.contix.eclipse.hudson.digger.DiggerDialog;
 
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 
 @UIType
 public class HudsonPreferencesPage extends FieldEditorPreferencePage implements IWorkbenchPreferencePage {

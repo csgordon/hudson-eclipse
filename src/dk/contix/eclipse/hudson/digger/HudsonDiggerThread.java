@@ -2,7 +2,7 @@ package dk.contix.eclipse.hudson.digger;
 
 import java.util.Collection;
 
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 
 final class HudsonDiggerThread extends Thread implements DiggerListener {
 	private final DiggerDialog hudsonDialog;

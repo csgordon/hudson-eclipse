@@ -15,7 +15,7 @@ import org.eclipse.swt.widgets.Display;
 
 import dk.contix.eclipse.hudson.views.actions.BuildStatusAction;
 
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 
 /**
  * Content Provider for job listing.

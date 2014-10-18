@@ -3,7 +3,7 @@ package dk.contix.eclipse.hudson;
 import java.util.List;
 
 import org.eclipse.swt.graphics.Image;
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 
 public class BuildHealth implements Comparable<BuildHealth> {
 

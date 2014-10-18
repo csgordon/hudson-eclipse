@@ -2,7 +2,7 @@ package dk.contix.eclipse.hudson.views.actions;
 
 import org.eclipse.jface.action.Action;
 import org.eclipse.swt.widgets.Shell;
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 
 public class SecurityTokenAction extends Action {
 

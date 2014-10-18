@@ -65,7 +65,7 @@ import dk.contix.eclipse.hudson.views.actions.OpenPreferencesAction;
 import dk.contix.eclipse.hudson.views.actions.SelectViewAction;
 import dk.contix.eclipse.hudson.views.actions.StatusFilter;
 
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 
 @UIType @UI public class HudsonView extends ViewPart implements @UI PropertyChangeListener {
 	private TableViewer viewer;

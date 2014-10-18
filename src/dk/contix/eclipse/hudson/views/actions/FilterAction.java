@@ -7,7 +7,7 @@ import org.eclipse.swt.widgets.Event;
 
 import dk.contix.eclipse.hudson.Activator;
 
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 @UIType public class FilterAction extends BooleanPropertyAction {
 
 	private final TableViewer viewer;

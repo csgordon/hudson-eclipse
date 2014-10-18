@@ -36,7 +36,7 @@ import dk.contix.eclipse.hudson.HudsonClient;
 import dk.contix.eclipse.hudson.Job;
 import dk.contix.eclipse.hudson.BuildParameter;
 import dk.contix.eclipse.hudson.ParametersRequiredException;
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 
 @UIType public class ParameterizedBuildDialog extends Dialog {
 

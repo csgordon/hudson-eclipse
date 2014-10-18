@@ -11,7 +11,7 @@ import org.eclipse.swt.widgets.Table;
 import org.eclipse.swt.widgets.TableColumn;
 
 import dk.contix.eclipse.hudson.Job;
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 
 
 @UIType public class JobSorter extends ViewerSorter implements Listener {
